@@ -7,20 +7,14 @@ import CardMedia from "@mui/material/CardMedia";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 
-export default function DataCard({ imageURL }) {
+export default function DataCard({ imageURL, onClick }) {
   return (
-    // <Card>
-    //   <CardContent sx={{ pt: 0 }}>
-    //     <Typography>Passed prop: {text} </Typography>
-    //   </CardContent>
-    // </Card>
-
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
+        onClick={onClick}
         component="img"
         alt="green iguana"
         height="140"
-        // image="/static/images/cards/contemplative-reptile.jpg"
         image={imageURL}
       />
       <CardContent>
