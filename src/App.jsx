@@ -85,110 +85,22 @@ function App() {
         <Container>
           <Grid container spacing={2}>
             <Grid size={4}>
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  component="img"
-                  alt="green iguana"
-                  height="140"
-                  // image="/static/images/cards/contemplative-reptile.jpg"
-                  image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/135.png"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Share</Button>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>{" "}
+              <DataCard imageURL="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/135.png"></DataCard>
             </Grid>
             <Grid size={4}>
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  component="img"
-                  alt="green iguana"
-                  height="140"
-                  // image="/static/images/cards/contemplative-reptile.jpg"
-                  image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Share</Button>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>{" "}
+              <DataCard imageURL="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"></DataCard>
             </Grid>
             <Grid size={4}>
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  component="img"
-                  alt="green iguana"
-                  height="140"
-                  // image="/static/images/cards/contemplative-reptile.jpg"
-                  image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Share</Button>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>{" "}
+              <DataCard imageURL="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png"></DataCard>
             </Grid>
             <Grid size={8}>
-              <Card sx={{ maxWidth: 345 }}>
-                <CardMedia
-                  component="img"
-                  alt="green iguana"
-                  height="140"
-                  // image="/static/images/cards/contemplative-reptile.jpg"
-                  image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Share</Button>
-                  <Button size="small">Learn More</Button>
-                </CardActions>
-              </Card>{" "}
+              <DataCard imageURL="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png"></DataCard>
             </Grid>
           </Grid>
         </Container>
 
         {/*  */}
-        <DataCard></DataCard>
+        <DataCard imageURL="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/135.png"></DataCard>
       </Container>
     </>
   );
