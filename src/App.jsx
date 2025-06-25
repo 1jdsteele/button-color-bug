@@ -34,20 +34,20 @@
 
 // export default App
 
-
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import './App.css'
+import "./App.css";
 // import characters from './protagonists.json'
 
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import CardMedia from '@mui/material/CardMedia';
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardActions from "@mui/material/CardActions";
+import CardMedia from "@mui/material/CardMedia";
 
-import Grid from '@mui/material/Grid';
+import Grid from "@mui/material/Grid";
 
+import DataCard from './DataCard'
 
 function App() {
   return (
@@ -72,7 +72,8 @@ function App() {
       </Container>
 
       <Container maxWidth="lg">
-        <Button sx={{ backgroundColor: 'red' }}
+        <Button
+          sx={{ backgroundColor: "red" }}
           variant="contained"
           // I'm trying to use custom CSS defined in the file App.css,
           // but it isn't working. Why, and how can I fix it?
@@ -81,139 +82,116 @@ function App() {
           Red Button?
         </Button>
 
+        <Container>
+          <Grid container spacing={2}>
+            <Grid size={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="140"
+                  // image="/static/images/cards/contemplative-reptile.jpg"
+                  image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/135.png"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Lizard
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                    Lizards are a widespread group of squamate reptiles, with
+                    over 6,000 species, ranging across all continents except
+                    Antarctica
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small">Share</Button>
+                  <Button size="small">Learn More</Button>
+                </CardActions>
+              </Card>{" "}
+            </Grid>
+            <Grid size={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="140"
+                  // image="/static/images/cards/contemplative-reptile.jpg"
+                  image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Lizard
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                    Lizards are a widespread group of squamate reptiles, with
+                    over 6,000 species, ranging across all continents except
+                    Antarctica
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small">Share</Button>
+                  <Button size="small">Learn More</Button>
+                </CardActions>
+              </Card>{" "}
+            </Grid>
+            <Grid size={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="140"
+                  // image="/static/images/cards/contemplative-reptile.jpg"
+                  image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Lizard
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                    Lizards are a widespread group of squamate reptiles, with
+                    over 6,000 species, ranging across all continents except
+                    Antarctica
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small">Share</Button>
+                  <Button size="small">Learn More</Button>
+                </CardActions>
+              </Card>{" "}
+            </Grid>
+            <Grid size={8}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardMedia
+                  component="img"
+                  alt="green iguana"
+                  height="140"
+                  // image="/static/images/cards/contemplative-reptile.jpg"
+                  image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Lizard
+                  </Typography>
+                  <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                    Lizards are a widespread group of squamate reptiles, with
+                    over 6,000 species, ranging across all continents except
+                    Antarctica
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button size="small">Share</Button>
+                  <Button size="small">Learn More</Button>
+                </CardActions>
+              </Card>{" "}
+            </Grid>
+          </Grid>
+        </Container>
 
-
-
-{/*  */}
-
- <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        // image="/static/images/cards/contemplative-reptile.jpg"
-        image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-
-{/*  */}
-
-
-<Grid container spacing={2}>
-  <Grid size={8}>
- <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        // image="/static/images/cards/contemplative-reptile.jpg"
-        image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>  </Grid>
-  <Grid size={4}>
- <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        // image="/static/images/cards/contemplative-reptile.jpg"
-        image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>  </Grid>
-  <Grid size={4}>
- <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        // image="/static/images/cards/contemplative-reptile.jpg"
-        image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>  </Grid>
-  <Grid size={8}>
- <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        // image="/static/images/cards/contemplative-reptile.jpg"
-        image="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>  </Grid>
-</Grid>
-
-
-
-{/*  */}
-
+        {/*  */}
+        <DataCard></DataCard>
       </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
