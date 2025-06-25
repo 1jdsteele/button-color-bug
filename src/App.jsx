@@ -47,7 +47,14 @@ import CardMedia from "@mui/material/CardMedia";
 
 import Grid from "@mui/material/Grid";
 
-import DataCard from './DataCard'
+import DataCard from "./DataCard";
+
+const imageURLs = [
+  "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/135.png",
+  "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+  "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
+  "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png",
+];
 
 function App() {
   return (
@@ -84,7 +91,7 @@ function App() {
 
         <Container>
           <Grid container spacing={2}>
-            <Grid size={4}>
+            {/* <Grid size={4}>
               <DataCard imageURL="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/135.png"></DataCard>
             </Grid>
             <Grid size={4}>
@@ -95,12 +102,16 @@ function App() {
             </Grid>
             <Grid size={8}>
               <DataCard imageURL="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png"></DataCard>
-            </Grid>
+            </Grid> */}
+            {imageURLs.map((url) => (
+              <Grid>
+                <DataCard imageURL={url} />
+              </Grid>
+            ))}
           </Grid>
         </Container>
 
         {/*  */}
-        <DataCard imageURL="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/135.png"></DataCard>
       </Container>
     </>
   );
